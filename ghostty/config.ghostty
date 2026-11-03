@@ -52,7 +52,7 @@
 # resize-overlay-duration = 4s 200ms
 
 #
-macos-option-as-alt = true
+macos-option-as-alt = left
 
 # Navigate between splits super + h/j/k/l (style Vim)
 keybind = super+h=goto_split:left
