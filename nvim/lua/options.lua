@@ -1,5 +1,9 @@
 local opt = vim.opt
 
+-- Line numbers (absolute, not relative)
+opt.number = true
+opt.relativenumber = false
+
 -- Indentation: 2 spaces
 opt.tabstop = 2
 opt.shiftwidth = 2
