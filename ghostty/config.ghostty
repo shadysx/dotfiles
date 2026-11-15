@@ -60,3 +60,5 @@ keybind = super+j=goto_split:bottom
 keybind = super+k=goto_split:top
 keybind = super+l=goto_split:right
 
+# Misc
+font-size = 24
