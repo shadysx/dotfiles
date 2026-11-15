@@ -28,6 +28,8 @@ brew install lazygit      # used by Neovim (lazygit.nvim) and on its own
 # Shell
 brew install starship     # prompt
 brew install eza          # modern ls, used by the aliases
+brew install fzf          # fuzzy finder (Ctrl+R, Ctrl+T, Alt+C)
+brew install fd           # optional: faster file listing for fzf
 ```
 
 ### Fonts (optional)
@@ -75,6 +77,7 @@ Add this to the end of `~/.zshrc`:
 ```sh
 # Versioned aliases
 [ -f "$HOME/projects/dotfiles/zsh/aliases.zsh" ] && source "$HOME/projects/dotfiles/zsh/aliases.zsh"
+[ -f "$HOME/projects/dotfiles/zsh/fzf.zsh" ] && source "$HOME/projects/dotfiles/zsh/fzf.zsh"
 
 # Prompt
 eval "$(starship init zsh)"

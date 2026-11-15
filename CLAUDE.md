@@ -4,7 +4,7 @@ Configs for Ghostty, Lazygit, Neovim and Starship, linked into place with symlin
 
 - `ghostty/config.ghostty` -> `~/.config/ghostty/config.ghostty`
 - `starship/starship.toml` -> `~/.config/starship.toml`
-- `zsh/aliases.zsh` is not symlinked: `~/.zshrc` sources it directly from this repo
+- `zsh/aliases.zsh` and `zsh/fzf.zsh` are not symlinked: `~/.zshrc` sources them directly from this repo
 - `lazygit/config.yml` -> `~/Library/Application Support/lazygit/config.yml`
 - `nvim/` -> `~/.config/nvim`
 
