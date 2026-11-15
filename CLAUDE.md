@@ -1,8 +1,9 @@
 # Dotfiles
 
-Configs for Ghostty, Lazygit and Neovim, linked into place with symlinks:
+Configs for Ghostty, Lazygit, Neovim and Starship, linked into place with symlinks:
 
 - `ghostty/config.ghostty` -> `~/.config/ghostty/config.ghostty`
+- `starship/starship.toml` -> `~/.config/starship.toml`
 - `lazygit/config.yml` -> `~/Library/Application Support/lazygit/config.yml`
 - `nvim/` -> `~/.config/nvim`
 
