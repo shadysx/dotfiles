@@ -44,12 +44,7 @@
 # background = #123abc
 #
 # # Empty values are used to reset config keys to default.
-# key =
-#
-# # Some config options have unique syntaxes for their value,
-# # which is explained in the docs for that config option.
-# # Just for example:
-# resize-overlay-duration = 4s 200ms
+
 
 #
 macos-option-as-alt = left
@@ -62,3 +57,9 @@ keybind = super+l=goto_split:right
 
 # Misc
 font-size = 24
+window-padding-x = 2
+window-padding-y = 2
+background-opacity = 1
+cursor-style = block
+macos-titlebar-style = tabs
+maximize = true
