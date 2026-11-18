@@ -20,6 +20,8 @@ List the real bindings: `ghostty +list-keybinds` (add `--default` for the built-
 | `⌘K` | Go to the split above |
 | `⌘L` | Go to the split on the right |
 
+Also set explicitly in the config, so that Linux gets the same keys as macOS (`super` = `⌘` on macOS, the Windows key on Linux): `⌘D`, `⇧⌘D`, `⌘W`, `⌘T` (see "Windows, tabs, splits"). On macOS they change nothing.
+
 Notes:
 - `⌘H` is "Hide" in macOS and may be captured by the system before Ghostty. If so, use `⌥⌘H`.
 - `⌘K` no longer clears the screen and `⌘J` no longer scrolls to the selection. Use `Ctrl+L` in the shell to clear.

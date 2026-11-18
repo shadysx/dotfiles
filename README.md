@@ -1,6 +1,6 @@
 # Dotfiles
 
-Personal configs for macOS: Ghostty, Neovim, Lazygit, Starship and a few zsh aliases.
+Personal configs for macOS and Linux: Ghostty, Neovim, Lazygit, Starship and a few zsh aliases.
 Keybindings are listed in [`shortcuts.md`](shortcuts.md).
 
 ## What's inside
@@ -93,6 +93,33 @@ so it is safe on a machine without eza.
 1. Quit Ghostty fully (`Cmd + Q`) and reopen it. Some options, like window padding, only apply to new windows.
 2. Open `nvim`. The plugin manager ([lazy.nvim](https://github.com/folke/lazy.nvim)) installs itself and the plugins on first start.
 3. Run `:checkhealth` in Neovim if something looks wrong.
+
+## Linux (Debian/Ubuntu, KDE)
+
+Same repo, same configs. Differences with macOS:
+
+```sh
+sudo apt install zsh neovim lazygit fzf eza fd-find
+ln -s "$(command -v fdfind)" ~/.local/bin/fd   # Debian names the fd binary fdfind
+chsh -s "$(command -v zsh)"                     # then log out and back in
+curl -sS https://starship.rs/install.sh | sh    # if starship is not packaged
+```
+
+Symlinks: identical, except Lazygit lives in `~/.config/lazygit/config.yml`:
+
+```sh
+DOTFILES=~/projects/dotfiles
+mkdir -p ~/.config/ghostty ~/.config/lazygit
+ln -s "$DOTFILES/ghostty/config.ghostty" ~/.config/ghostty/config.ghostty
+ln -s "$DOTFILES/nvim"                   ~/.config/nvim
+ln -s "$DOTFILES/lazygit/config.yml"     ~/.config/lazygit/config.yml
+ln -s "$DOTFILES/starship/starship.toml" ~/.config/starship.toml
+```
+
+Ghostty on Linux:
+- `super` is the Windows key. Its built-in Linux shortcuts use `Ctrl+Shift`, so the config binds `super+t/d/shift+d/w` explicitly to match macOS.
+- KDE uses some `Meta` (Super) shortcuts by default: free the ones that clash (`Meta+D`, `Meta+W`, `Meta+T`, `Meta+L`) in System Settings → Shortcuts.
+- `macos-*` options are ignored on Linux, `gtk-*` options are ignored on macOS.
 
 ## Useful commands
 

@@ -56,10 +56,17 @@ keybind = super+k=goto_split:top
 keybind = super+l=goto_split:right
 
 # Misc
-font-size = 24
+font-size = 20
 window-padding-x = 2
 window-padding-y = 2
 background-opacity = 1
 cursor-style = block
 macos-titlebar-style = tabs
+gtk-titlebar-style = tabs
 maximize = true
+
+# Linux : équivalents des raccourcis Cmd par défaut sur Mac
+keybind = super+d=new_split:right
+keybind = super+shift+d=new_split:down
+keybind = super+w=close_surface
+keybind = super+t=new_tab

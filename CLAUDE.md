@@ -5,7 +5,7 @@ Configs for Ghostty, Lazygit, Neovim and Starship, linked into place with symlin
 - `ghostty/config.ghostty` -> `~/.config/ghostty/config.ghostty`
 - `starship/starship.toml` -> `~/.config/starship.toml`
 - `zsh/aliases.zsh` and `zsh/fzf.zsh` are not symlinked: `~/.zshrc` sources them directly from this repo
-- `lazygit/config.yml` -> `~/Library/Application Support/lazygit/config.yml`
+- `lazygit/config.yml` -> `~/Library/Application Support/lazygit/config.yml` (macOS) or `~/.config/lazygit/config.yml` (Linux)
 - `nvim/` -> `~/.config/nvim`
 
 ## Keep `shortcuts.md` up to date
@@ -13,6 +13,8 @@ Configs for Ghostty, Lazygit, Neovim and Starship, linked into place with symlin
 Whenever you add, change or remove a keybinding in any of these configs (Ghostty `keybind`, Lazygit `keybinding`, Neovim keymaps or a plugin's `keys`), update `shortcuts.md` in the same change. Check the real bindings rather than relying on memory (`ghostty +list-keybinds`, `?` in Lazygit, `:map` in Neovim).
 
 ## Conventions
+
+- Used on macOS and Linux (KDE): keep options for both (`macos-*` and `gtk-*` are each ignored on the other OS).
 
 - Comments and `desc` fields in Neovim Lua files are written in English.
 - The keyboard is Belgian AZERTY: avoid bindings that need `[`, `]`, `{`, `}` or digits without Shift.
