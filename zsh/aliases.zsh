@@ -4,8 +4,8 @@
 # eza: modern replacement for ls (brew install eza)
 if command -v eza >/dev/null 2>&1; then
   alias ls="eza --icons --group-directories-first"
-  alias ll="eza -l --icons --git --group-directories-first"
-  alias la="eza -la --icons --git --group-directories-first"
-  alias lt="eza --tree --level=2 --icons --group-directories-first"
-  alias lta="eza --tree --level=2 -a --icons --group-directories-first --ignore-glob='.git|node_modules'"
+  alias ll="eza -l --total-size --icons --git --group-directories-first"
+  alias la="eza -la --total-size --icons --git --group-directories-first"
+  alias lt="eza -l --tree --level=2 --total-size --icons --git --group-directories-first"
+  alias lta="eza -l --tree --level=2 -a --total-size --icons --git --group-directories-first --ignore-glob='.git|node_modules'"
 fi
